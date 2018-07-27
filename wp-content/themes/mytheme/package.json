@@ -4,7 +4,7 @@
   "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass scss/style.scss ../style.css -w"
+    "watch:sass": "node-sass scss/style.scss style.css -w"
   },
   "author": "",
   "license": "ISC",

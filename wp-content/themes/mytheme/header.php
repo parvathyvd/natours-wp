@@ -33,10 +33,6 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mytheme' ); ?></a>
-
-   
-
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__label">&nbsp;
