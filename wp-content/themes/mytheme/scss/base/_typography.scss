@@ -1,0 +1,36 @@
+body{
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.heading-secondary{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $light-green,$dark-green);
+  display: inline-block;
+  -webkit-background-clip : text;
+  color: transparent;
+  transition: all .2s;
+  letter-spacing: .2rem;
+
+  &:hover{
+    transform: skewY(2deg) skewX(15deg) scale(1.15);
+    text-shadow: .5rem 1rem 2rem rgba($color-black,0.2);
+  }
+}
+.heading-tertiary{
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.paragraph{
+  font-size: 1.6rem;
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}

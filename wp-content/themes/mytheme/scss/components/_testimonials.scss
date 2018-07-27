@@ -1,0 +1,82 @@
+.testimonial__wrapper{
+  width: 80%;
+  background: rgba(white, 0.6);
+  padding: 3rem 1rem;
+  padding-left: 6rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+  border-radius: 3px;
+  margin: 0 auto 3rem auto;
+  transform: skewX(-12deg);
+  @include respond(tab-port){
+    transform: skewX(0deg);
+
+  }
+
+
+  &__image{
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+    @include respond(tab-port){
+
+      transform: translateX(2rem) skewX(0deg);
+      backface-visibility: hidden;
+      display: block;
+      margin-right: 2rem;
+
+    }
+
+    &--image{
+      height:100%;
+      transform: translateX(-2.9rem) scale(1.4);
+      backface-visibility: hidden;
+      transition: all .5s;
+
+
+
+    }
+    &--caption{
+      color: white;
+      text-transform: uppercase;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-10%);
+      text-align: center;
+      opacity: 0;
+      font-size: 1.7rem;
+      transition: all .5s;
+      backface-visibility: hidden;
+    }
+  }
+  &__text{
+    transform: skewX(12deg);
+    padding: 2rem 0;
+    @include respond(tab-port){
+      transform: skewX(0deg);
+      display: block;
+      padding-top: 15rem;
+
+
+    }
+    @include respond(phone){
+      
+      padding-top: 10rem;
+
+    }
+  }
+  &:hover &__image--caption{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+  }
+  &:hover &__image--image{
+    transform:  translateX(-2.9rem) scale(1);
+    backface-visibility: hidden;
+    filter: blur(3px) brightness(80%);
+
+  }
+}
